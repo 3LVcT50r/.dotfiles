@@ -1,0 +1,8 @@
+import = ["/home/victor/.config/alacritty/themes/catppuccin-mocha.toml"]
+
+[font]
+size = 8.0
+
+[window.padding]
+x = 5
+y = 3
