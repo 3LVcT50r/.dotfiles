@@ -1,3 +1,5 @@
+exec i3-layouts
+set $i3l spiral 0.6 to workspace "1"
 # exec --no-startup-id ~/set_once.sh
 # This file is a modified version based on default i3-config-wizard config
 # source is available here:
@@ -37,7 +39,7 @@ workspace_layout default
 
 # i3 stacking layout:
 # Each window will be fullscreen and tabbed top to bottom.
-#workspace_layout stacking
+#workspace_layout 
 
 # i3 tabbed layout:
 # Each new window will open fullscreen as a tab (left to right)
