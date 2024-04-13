@@ -47,7 +47,11 @@ return packer.startup(function(use)
     use ("catppuccin/nvim")                         -- Theme
     use ("nvim-treesitter/nvim-treesitter")         -- Colores
     use ("Joakker/vim-antlr4")                      -- Antlr4 color  
-
+    use {
+      'nvim-telescope/telescope.nvim', tag = '0.1.6',
+      requires = { {'nvim-lua/plenary.nvim'} }
+    }
+    
     if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
