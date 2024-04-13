@@ -1,8 +1,13 @@
 import = ["/home/victor/.config/alacritty/themes/catppuccin-mocha.toml"]
 
 [font]
-size = 8.0
+size = 8.5
+
+[font.normal]
+family = "JetBrainsMonoNLNerdFontMono"
 
 [window.padding]
 x = 5
 y = 3
+
+
