@@ -1,5 +1,8 @@
-exec i3-layouts
-set $i3l spiral 0.6 to workspace "1"
+#exec --no-startup-id /path/to/alternating_layouts.py
+exec_always --no-startup-id autotiling
+
+#exec i3-layouts
+#set $i3l spiral 0.6 to workspace "1"
 # exec --no-startup-id ~/set_once.sh
 # This file is a modified version based on default i3-config-wizard config
 # source is available here:
@@ -39,11 +42,11 @@ workspace_layout default
 
 # i3 stacking layout:
 # Each window will be fullscreen and tabbed top to bottom.
-#workspace_layout 
+#workspace_layout tree
 
 # i3 tabbed layout:
 # Each new window will open fullscreen as a tab (left to right)
-#workspace_layout tabbed
+#workspace_layout tree
 
 ##############################
 # extra options for windows: #
@@ -141,8 +144,7 @@ bindcode $mod+Shift+84 	 move container to workspace  $ws5
 bindcode $mod+Shift+85 	 move container to workspace  $ws6
 bindcode $mod+Shift+79 	 move container to workspace  $ws7
 bindcode $mod+Shift+80 	 move container to workspace  $ws8
-bindcode $mod+Shift+81 	 move container to workspace  $ws9
-bindcode $mod+Shift+90 	 move container to workspace  $ws10
+bindcode $mod+Shift+81 	 move container to workspace  $ws9 bindcode $mod+Shift+90 	 move container to workspace  $ws10
 
 # resize window (you can also use the mouse for that):
 #mode "resize" {
@@ -156,7 +158,7 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 #        bindsym l resize shrink height 10 px or 10 ppt
 #        bindsym ; resize grow width 10 px or 10 ppt
 
-# same bindings, but for the arrow keys
+
 #	bindsym Left resize shrink width 10 px or 10 ppt
 #        bindsym Down resize grow height 10 px or 10 ppt
 #        bindsym Up resize shrink height 10 px or 10 ppt
