@@ -1,7 +1,7 @@
 import = ["/home/victor/.config/alacritty/themes/catppuccin-mocha.toml"]
 
 [font]
-size = 8.5
+size = 8
 
 [font.normal]
 family = "JetBrainsMonoNLNerdFontMono"
@@ -10,4 +10,5 @@ family = "JetBrainsMonoNLNerdFontMono"
 x = 5
 y = 3
 
-
+[keyboard]
+bindings = [{ key = "Return", mods = "Super|Shift", action = "SpawnNewInstance"},]
