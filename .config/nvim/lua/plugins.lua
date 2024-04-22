@@ -48,9 +48,16 @@ return packer.startup(function(use)
     use ("nvim-treesitter/nvim-treesitter")         -- Colores
     use ("Joakker/vim-antlr4")                      -- Antlr4 color  
     use {
-      'nvim-telescope/telescope.nvim', tag = '0.1.6',
+      'nvim-telescope/telescope.nvim', tag = '0.1.6', -- Telescope
       requires = { {'nvim-lua/plenary.nvim'} }
     }
+    use {                                           -- Comentar con gc
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
+    use ("lewis6991/gitsigns.nvim")                 --Git cositas
     
     if PACKER_BOOTSTRAP then
 		require("packer").sync()
