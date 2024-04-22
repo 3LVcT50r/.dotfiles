@@ -33,6 +33,9 @@ alias l="ls -a"
 alias ll="ls -la"
 alias vim="nvim"
 alias cl="clear"
+alias gst="git status"
+alias gpsh="git push"
+alias gpll="git pull"
 
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship.toml
