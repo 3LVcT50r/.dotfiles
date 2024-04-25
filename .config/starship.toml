@@ -152,7 +152,7 @@ base = "#24273a"
 mantle = "#1e2030"
 crust = "#181926"
 
-palette = "catppuccin_flavor"
+palette = "catppuccin_mocha"
 
 
 [time]
