@@ -40,3 +40,6 @@ alias gpll="git pull"
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship.toml
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Created by `pipx` on 2024-04-25 15:17:13
+export PATH="$PATH:/home/victor/.local/bin"
