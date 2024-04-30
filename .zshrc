@@ -23,6 +23,8 @@ compinit
 _comp_options+=(globdots)
 # End of lines added by compinstall
 
+
+
 # vi mode
 #bindkey -v
 #export KEYTIMEOUT=1
