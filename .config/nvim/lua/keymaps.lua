@@ -1,10 +1,12 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.opt.clipboard = 'unnamedplus'
+
 vim.opt.backspace = '2'
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
--- vim.opt.cursorline = true
+vim.opt.cursorline = true
 vim.opt.autoread = true 
 
 vim.opt.number = true
@@ -15,8 +17,6 @@ vim.opt.scrolloff = 10
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
-
--- vim.opt.colorcolumn = "80"
 
 vim.api.nvim_set_option_value("colorcolumn", "80", {})
 
