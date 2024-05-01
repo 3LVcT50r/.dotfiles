@@ -21,7 +21,7 @@ vim.opt.expandtab = true
 vim.api.nvim_set_option_value("colorcolumn", "80", {})
 
 -- Resetear el search
-vim.keymap.set('n', '<leader>f', ':nohlsearch<CR>')
+vim.keymap.set('n', '<leader>g', ':nohlsearch<CR>')
 vim.keymap.set('i', 'jj', '<Esc>')
 
 vim.keymap.set('n', '<leader>h', '<c-w><c-h>', { desc = "Move focus to the left windonw" })
