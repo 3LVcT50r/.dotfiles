@@ -1,13 +1,16 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Poner el .pl en Prolog
+vim.cmd[[au BufRead,BufNewFile *.pl setfiletype prolog]]
+
 vim.opt.clipboard = 'unnamedplus'
 
 vim.opt.backspace = '2'
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
 vim.opt.cursorline = true
-vim.opt.autoread = true 
+vim.opt.autoread = true
 
 vim.opt.number = true
 vim.opt.relativenumber = true
