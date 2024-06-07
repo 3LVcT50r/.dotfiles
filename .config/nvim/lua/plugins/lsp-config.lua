@@ -9,7 +9,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd", "autotools_ls", "pylsp" },
+				ensure_installed = { "lua_ls", "clangd", "pylsp", "autotools_ls" },
 			})
 		end,
 	},
@@ -46,11 +46,11 @@ return {
 					vim.keymap.set("n", "<Leader>vlr", ":LspRestart<cr>")
 					vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
 					vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
-					vim.keymap.set("n", "<leader>le", vim.diagnostic.open_float)
+					vim.keymap.set("n", "<leader>ee", vim.diagnostic.open_float)
 					vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 					vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 					vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
-					vim.keymap.set("n", "<space>ls", ":LspStop<cr>", opts)
+					vim.keymap.set("n", "<space>ss", ":LspStop<cr>", opts)
 					vim.api.nvim_set_hl(0, "FloatBorder", { link = "Normal" })
 				end,
 			})

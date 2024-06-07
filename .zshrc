@@ -23,7 +23,7 @@ compinit
 _comp_options+=(globdots)
 # End of lines added by compinstall
 
-
+xset r rate 200 25
 
 # vi mode
 #bindkey -v

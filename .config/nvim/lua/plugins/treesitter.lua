@@ -28,7 +28,7 @@ return {
 					"cmake",
 					"java",
 				},
-				sync_install = false,
+				sync_install = false, --false
 				auto_install = true,
 				-- highlight = false,
 				highlight = {
@@ -44,4 +44,7 @@ return {
 	{
 		"Joakker/vim-antlr4",
 	},
+    {
+        "tikhomirov/vim-glsl"
+    },
 }
