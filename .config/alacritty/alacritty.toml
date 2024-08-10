@@ -4,7 +4,7 @@ import = ["/home/victor/.config/alacritty/themes/catppuccin-mocha.toml"]
 size = 8
 
 [font.normal]
-family = "JetBrainsMonoNLNerdFontMono"
+family = "FiraCodeNerdFontMono"
 
 [window.padding]
 x = 5

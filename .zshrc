@@ -1,5 +1,12 @@
 #!/bin/zsh
 
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+zstyle ':vcs_info:git:*' formats '%b '
+
+setopt PROMPT_SUBST
+PROMPT='%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
 
 stty stop undef	
 
@@ -39,8 +46,8 @@ alias gst="git status"
 alias gpsh="git push"
 alias gpll="git pull"
 
-eval "$(starship init zsh)"
-export STARSHIP_CONFIG=~/.config/starship.toml
+# eval "$(starship init zsh)"
+# export STARSHIP_CONFIG=~/.config/starship.toml
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Created by `pipx` on 2024-04-25 15:17:13
