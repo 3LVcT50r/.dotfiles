@@ -19,7 +19,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id autorandr default
 
 # Establecer fondo de pantalla (ya esa en .fehbg)
-# exec --no-startup-id feh --bg-scale ~/.dotfiles/fondo.jpg
+exec --no-startup-id feh --bg-scale /home/victor/.dotfiles/fondo.jpg 
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -47,6 +47,9 @@ bindsym $mod+q kill
 # bindsym $mod+Shift+d exec rofi -show run 
 # bindsym $mod+d exec rofi -show drun 
 bindsym $mod+space exec --no-startup-id $HOME/scripts/command_exec_rofi.sh
+
+# exit-menu
+bindsym $mod+Shift+e exec --no-startup-id ~/.config/i3/scripts/powermenu
 
 # change focus
 bindsym $mod+h focus left
@@ -171,7 +174,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -191,6 +194,8 @@ bindsym $mod+r mode "resize"
 
 # launch nitrogen and restore previous wallpaper
 exec_always nitrogen --restore
+
+exec --no-startup-id feh --no-fehbg --bg-scale '/home/victor/.dotfiles/fondo.jpg' 
 
 # launch the xfce4-power-manager at startup
 exec --no-startup-id xfce4-power-manager
@@ -222,9 +227,6 @@ gaps inner 6
 gaps outer 3
 gaps top 35
 
-# lock the screen
-bindsym Mod1+Ctrl+Return exec ~/scripts/lock.sh
-
 # take screenshot
 bindsym Mod1+Ctrl+f exec "~/scripts/screenie_and_xclip.sh"
 
@@ -233,9 +235,13 @@ bindsym Mod1+Ctrl+s exec "~/scripts/screenie_and_xclip_clipboard.sh"
 
 # open thunar
 bindsym Mod1+t exec thunar
-bindsym Mod1+d exec thunar ~/Downloads
+bindsym Mod1+d exec thunar ~/Descargas
 bindsym Mod1+s exec thunar ~/hause/significant\ things
 bindsym Mod1+b exec thunar ~/hause/significant\ things/books
+
+## dunst 
+
+exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 
 ## rofi bindings fancy application menu ($mod+d /F9 optional disabled)
 

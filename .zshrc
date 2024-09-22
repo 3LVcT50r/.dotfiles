@@ -46,6 +46,7 @@ alias gst="git status"
 alias gpsh="git push"
 alias gpll="git pull"
 alias ..="cd .."
+alias cat="bat"
 
 # eval "$(starship init zsh)"
 # export STARSHIP_CONFIG=~/.config/starship.toml
