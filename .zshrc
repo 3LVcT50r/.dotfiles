@@ -54,3 +54,4 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Created by `pipx` on 2024-04-25 15:17:13
 export PATH="$PATH:/home/victor/.local/bin"
+export JAVA_HOME=/usr/lib64/jvm/java-11-openjdk
