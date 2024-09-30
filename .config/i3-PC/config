@@ -118,8 +118,8 @@ client.placeholder      #70946B #70946B #ffffff #70946B #70946B
 client.background       #ffffff
 
 workspace $ws1 output DP-0
-workspace $ws2 output DP-2
-workspace $ws3 output HDMI-0
+workspace $ws9 output DP-4
+workspace $ws10 output HDMI-0
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -241,7 +241,8 @@ bindsym Mod1+b exec thunar ~/hause/significant\ things/books
 
 ## dunst 
 
-exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
+#exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
+exec --no-startup-id /usr/bin/dunst
 
 ## rofi bindings fancy application menu ($mod+d /F9 optional disabled)
 
